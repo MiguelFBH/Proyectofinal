@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test botones</title>
+        <meta charset="utf-8">
+        <style>
+
+      body {
+        background: #f1f1f1;
+        margin:10px;
+        border:20px;
+      }
+
+      article {
+        width: 400px;
+        background: #fff;
+        padding: 20px 20px 0;
+        font-size: 18px;
+        max-height: 270px;
+        overflow: hidden;
+        margin-top: 70px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      article.open {
+        max-height: 1000px;
+      }
+
+      #xd {
+        background: #0e0b22;
+        color: #fff;
+        position:absolute;
+        top :100px;
+        left:449px;
+        
+      }
+
+      #bomba:hover {
+        cursor: pointer;
+        background: #1e1d25;
+        
+      }
+
+      #menu {
+        position:fixed;
+        top :0px;
+        width :1920px;
+        height: 20px;
+        z-index:2;
+        left:0px;
+      }
+
+      #Encabezado{
+        position:absolute;
+        width :1920px;
+        height: 80px;
+        top:20px;
+        z-index:0;
+        left:0px;
+      }
+
+      #Titulo {
+        position:absolute;
+        top:0px;
+        z-index:1;
+      }
+      #Tituloo {
+        position:absolute;
+        top: 35px;
+        z-index:1;
+      }
+      #Crousercanal{
+      position:fixed;
+      top:0px;
+      z-index:3;
+      }
+      #leave{
+        position:fixed;
+        top:0px;
+        left:125px;
+        z-index:3;
+        }
+        #bomb{
+        float:left;
+        }
+      #broly{
+        position:absolute;
+        right:200px;
+        top:300px;
+        width: 500px;
+      }  
+      #laintro {
+        position:absolute;
+        right:800px;
+        top:300px;
+      }
+      #elpase{
+        position:absolute;
+        right:800px;
+        top:650px;
+      }
+      #rojo{
+        position:absolute;
+        right:800px;
+        top:1000px;
+      }
+      #taz{
+        position:absolute;
+        right:800px;
+        top:1350px;
+      }
+
+    #pie{
+        position:absolute;
+        top :1660px;
+        width :1920px;
+        height: 20px;
+        z-index:0;
+        left:0px;
+    }
+    #copy {
+        position:absolute;
+        top :1640px;
+        z-index:1;
+        left:0px;
+    }
+    #lado {
+        position:fixed;
+        top:0px;
+        right:0px;
+        width:190px;
+        height: 1080px;
+        z-index:4;
+        }
+        
+        #Pepino{
+            position:fixed;
+        top:0px;
+        right:0px;
+        width:190px;
+        height: 1080px;
+        z-index:5;
+        }
+        </style>
+
+ <!-- Scripts -->
+
+<!-- Librería de JQuery (Lo necesario para poder acceder a sus funcionalidades, no cuento con la posibilidad de hostear el archivo por el ordenador de clase,
+  pero esto igualmente debería funcionar)-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- mostrar más/menos(usa java script) -->
+
+<script>function showMore() {
+  if (article.className == "open") {
+    article.className = "sí";
+    button.innerHTML = "Show more";
+  } else {
+    article.className = "open";
+    button.innerHTML = "Show less";
+  }
+}
+</script>
+
+<!-- Comentario (mostrar)(Usa java script)-->
+
+<script type="text/javascript">
+  function showStuff(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  </script>
+
+ <!-- Ocultar el body (hide, usa JQuery) -->
+
+<script>
+  $(document).ready(function(){
+    $("#bomba").click(function(){
+      $("#pseudobody").hide();
+    });
+  });
+</script>
+
+<!-- Muestra lo oculto (show, usa jquery)-->
+
+<script>
+  $(document).ready(function(){
+    $("#bomba").click(function(){
+      $("#crouser").show();
+    });
+  });
+</script>
+
+<!-- Muestra un texto oculto (show, usa jquery)(es repetir una función pero me apetecía hacerlo)-->
+
+<script>
+  $(document).ready(function(){
+    $("#huir").click(function(){
+      $("#nopuedes").show();
+    });
+  });
+</script>
+
+<!-- Muestra las funciones y datos del comentario (show, usa jquery)-->
+
+<script>
+  $(document).ready(function(){
+    $("#stuff").click(function(){
+      $("#bomba").show();
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $("#stuff").click(function(){
+      $("#save").show();
+    });
+  });
+</script>
+
+</head>
+<body>
+
+ 
+
+  <div id="pseudobody">
+    
+     <img  id="Encabezado" src="https://bangbranding.com/blog/wp-content/uploads/2016/09/700x511_SliderInterior.jpg">
+
+<img  id="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSItYAF5EPY-sbYcBBGL-YjSO2oZQkSIoKQ&usqp=CAU">
+
+<h1 id="Titulo">
+
+ Lorem Ipsum Crouser 57
+
+</h1>
+
+<h1 id="Tituloo">
+
+Viva Crouser
+
+</h1>
+
+<a target="_blank"id="Crousercanal" href="https://www.youtube.com/@Crouser57YT">
+
+Canal de Crouser
+
+</a>
+
+<a id="leave" href="https://google.com">
+
+Salir
+
+</a>
+
+<img id="broly" src="https://yt3.googleusercontent.com/Jbum3r-Co_jvgPHXQOuXhaLVilgHoZbaY-pTj9nDIyaON9GGVhAs0R9ae_ahlnc7aAkGFikL=s176-c-k-c0x00ffffff-no-rj">
+
+<iframe id="laintro"width="560" height="315" src="https://www.youtube.com/embed/LA44Q_Xou1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+<iframe id="elpase" width="560" height="315" src="https://www.youtube.com/embed/h90pqO5u0IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe id="rojo" width="560" height="315" src="https://www.youtube.com/embed/NPhhpdoIw2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe id="taz" width="560" height="315" src="https://www.youtube.com/embed/ADGkx92HkBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div>
+  <article id="contenido" >
+    <p>
+      Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+    </p>
+
+    <p>
+     Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+    </p>
+    
+  </article>
+</div>
+
+<!-- Selector del article via java (No funciona si lo coloco arriba debido al div y no tengo intención de tocarlo, no es un script tan principal pese a ser el corazón
+  de una funcionalidad)-->
+
+<script>const article = document.querySelector("#contenido");</script>
+
+<button id="xd"onclick="showMore()">Mostrar más</button>
+ 
+<td class="post">
+
+  <a id="stuff"href="#" onclick="showStuff('texto'); return false;">Añade un comentario</a>
+  <span id="texto" style="display: none;">
+    <textarea rows="10" cols="60"></textarea>
+  </span>
+
+ <strong style="display:none;"id="save">¡Se quedará guardado permanentemente!</strong> 
+
+ <button id="bomba" style="display:none;">
+
+  Enviar
+  
+  </button>
+
+  
+</td>
+
+</div>
+
+<img id="pie" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSItYAF5EPY-sbYcBBGL-YjSO2oZQkSIoKQ&usqp=CAU">
+
+<img id="lado" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSItYAF5EPY-sbYcBBGL-YjSO2oZQkSIoKQ&usqp=CAU">
+
+<h5 id=copy>
+
+    © Crouser57
+
+</h5>
+
+<h1 id="nopuedes" style="display:none;" >
+
+  No puedes
+  
+  </h1>
+
+  <a id="pepino" href="https://www.w3schools.com/html/default.asp" target="_blank">
+
+   <img id="Pepino"src="https://art.ngfiles.com/images/3100000/3100081_zertyng_pizza-tower-peppino-spaghetti.png?f1678933554">
+
+  </a>
+
+
+
+<div id="crouser" style="display:none;">
+
+<button id="huir">Escapar</button>
+
+
+  
+<iframe id="bomb" width="1920" height="1080" src="http://www.youtube.com/embed/VOPny17B6II?version=3&loop=1&playlist=VOPny17B6II&autoplay=1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe  width="1" height="1" src="http://www.youtube.com/embed/VOPny17B6II?version=3&loop=1&playlist=VOPny17B6II&autoplay=1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+</div>
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+</body>
+</html>
